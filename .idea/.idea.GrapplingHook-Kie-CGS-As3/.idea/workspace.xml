@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="77b8a8c9-6fc3-4d3e-ba8c-c260babcb993" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GrapplingHook-Kie-CGS-As3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GrapplingHook-Kie-CGS-As3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Animators/JohnLemon.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Animators/JohnLemon.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/JohnLemon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/JohnLemon.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/innerSPACE/Scene/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/innerSPACE/Scene/MainScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,7 +19,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.6.10/Runtime/Behaviours/CinemachineVirtualCamera.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/82ec470c913149358ad0c83ad628910c13a000/76/a0735580/Quaternion.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.6.10/Runtime/Behaviours/CinemachineFreeLook.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1zPDzC1UMjzmk3KlWnjvEC5nw5w" />
   <component name="ProjectViewState">
@@ -69,7 +76,9 @@
       <workItem from="1634304571591" duration="1216000" />
       <workItem from="1634306684634" duration="366000" />
       <workItem from="1634307205393" duration="1736000" />
-      <workItem from="1634881719779" duration="4218000" />
+      <workItem from="1634881719779" duration="4244000" />
+      <workItem from="1634896820580" duration="1240000" />
+      <workItem from="1634907492712" duration="435000" />
     </task>
     <servers />
   </component>
