@@ -2,11 +2,14 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
 
+/// <summary>
+/// Setting for the Option Menu.
+/// </summary>
 public class Settings : MonoBehaviour
 {
-    public GameObject optionsButton;
-    public GameObject optionsMenu;
-    public TMP_Dropdown ddAntiAlias;
+    [SerializeField] private GameObject optionsButton;
+    [SerializeField] private GameObject optionsMenu;
+    [SerializeField] private TMP_Dropdown ddAntiAlias;
 
     [SerializeField] private PostProcessLayer camPostProcessing;
     private void Start()
@@ -15,6 +18,9 @@ public class Settings : MonoBehaviour
         optionsButton.SetActive(true);
     }
 
+    /// <summary>
+    /// Open the options menu.
+    /// </summary>
     public void OpenOptionsMenu()
     {
         Time.timeScale = 0;
@@ -26,7 +32,11 @@ public class Settings : MonoBehaviour
     {
         ddAntiAlias.onValueChanged.AddListener(delegate { AntiAlias(ddAntiAlias.value);});
     }
-
+    
+    /// <summary>
+    /// The Anti Alias Options.
+    /// </summary>
+    /// <param name="_index">The drop down selected.</param>
     public void AntiAlias(int _index)
     {
         // Project Settings Control
@@ -61,6 +71,9 @@ public class Settings : MonoBehaviour
         ddAntiAlias.SetValueWithoutNotify(_index);
     }
 
+    /// <summary>
+    /// Close the options menu.
+    /// </summary>
     public void ResumeGame()
     {
         Time.timeScale = 1;

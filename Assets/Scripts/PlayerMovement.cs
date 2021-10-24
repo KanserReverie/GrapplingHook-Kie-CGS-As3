@@ -1,23 +1,26 @@
 using UnityEngine;
 
+/// <summary>
+/// Moves the player.
+/// </summary>
 public class PlayerMovement : MonoBehaviour
 {
     private Vector3 myMovement;
     private Quaternion myRotation = Quaternion.identity;
-    public float turnSpeed = 20f;
+    [SerializeField] private float turnSpeed = 20f;
     private Animator myAnimator;
     private Rigidbody myRigidbody;
     private AudioSource myAudioSource;
     
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         myAnimator = GetComponent<Animator>();
         myRigidbody = GetComponent<Rigidbody>();
         myAudioSource = GetComponent<AudioSource>();
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");

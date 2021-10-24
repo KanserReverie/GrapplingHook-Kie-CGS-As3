@@ -1,22 +1,32 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// This class ends the scene for the player.
+/// </summary>
 public class GameEnding : MonoBehaviour
 {
-    public float fadeDuration = 1f;
-    public float displayDuration = 1f;
-    public GameObject player;
+    [SerializeField] private float fadeDuration = 1f;
+    [SerializeField] private float displayDuration = 1f;
+    [SerializeField] private GameObject player;
     private bool m_IsPlayerAtExit = false;
     private bool m_IsPlayerCaught = false;
     private float m_Timer;
     private bool m_HasAudioPlayed;
-    public CanvasGroup exitBackgroundImageCanvasGroup;
-    public AudioSource exitAudio;
-    public CanvasGroup caughtBackgroundImageCanvasGroup;
-    public AudioSource caughtAudio;
+    [SerializeField] private CanvasGroup exitBackgroundImageCanvasGroup;
+    [SerializeField] private AudioSource exitAudio;
+    [SerializeField] private CanvasGroup caughtBackgroundImageCanvasGroup;
+    [SerializeField] private AudioSource caughtAudio;
 
+    /// <summary>
+    /// If the player is caught.
+    /// </summary>
     public void CaughtPlayer() => m_IsPlayerCaught = true;
 
+    /// <summary>
+    /// If the player enters the escape pad.
+    /// </summary>
+    /// <param name="other"> Collider of the object.</param>
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject == player)
